@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(".nav").slideToggle(200);
+            })
+            $(window).resize(function () {
+                if($(".hamburger").css("display") == "none")
+                {
+                    $(".nav").css("display","block");
+                }
+            })
+        })
+    </script>
+    
+    <title>Document</title>
+    <link rel="stylesheet" href="detalji.css">
+</head>
+<body>
+    <div class="container">
+    <div class="header"> 
+        
+        <img src="slike/logo.jpg" alt="logo_jpg"> 
+        <h1 class="moto">"Svet tehnologije"</h1>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="nav">
+            <ul>
+               
+               <li><a href="pocetna.html" class="tekst">Početna</a></li>
+               <li><a href="#" class="tekst">Servis</a></li>
+               <li><a href="kontakt.html" class="tekst"> Kontakt</a></li>
+               <li><a href="Onama.html" class="tekst"> O nama</a></li>
+               <li><a href="#" class="tekst">Proizvodi</a></li>
+               
+            
+    
+            </ul>
+        
+    </div>
+        
+   
+
+</div>
+
+    <div class="glavniDeo">
+    <div class="levaStrana">
+        
+        <h1>Vesti </h1>
+        <hr>
+        <h3>Windows dobija novi update</h3>
+        <img src="slike/vest1.jpg" alt="" >
+       <p>Kompanija Microsoft priprema veliko ažuriranje Windowsa 10 u 2021. godini, koje će korisnicima doneti veliko osveženje kada su dizajn i vizuelni identitet tog operativnog sistema u pitanju.
+        Apdejt će doneti značajne vizuelne promene interfejsa (Start meni, Action Center, File Explorer...), moderniji dizajn, bolje animacije i brojne druge novitete. Očekuje se da će novi interfejs početi da stiže kao deo Windows 10 "Cobalt" ažuriranja, koje je planirano za leto 2021. godine.
+        </p>
+        <hr>
+        <h3>Intel odlaže planove za 7nm čip</h3>
+        <img src="slike/vest2.jpg" alt="">
+        <p> Intel je tokom sastanka sa investitorima objavio loše vesti, istakavši da su kompanijini planovi za razvoj 7nm čipova odloženi za još šest meseci, te da zalihe sada zaostaju godinu dana za originalnim projekcijama. Do tada, kompanija će se i dalje oslanjati na svoje 10nm procesore.
+            U svojoj dokumentaciji, Intel ističe da tokom ove godine nastavlja da se prebacuje na 10nm proizvode, sa pojačanom proizvodnjom i snažnom potražnjom koja će dovesti do proširenja linije. Ovo uključuje rastući portfolio 10nm Intel Core procesora, gde će Tiger Lake biti objavljen uskoro, kao i Ice Lake za servere koji se očekuje do kraja godine.</p>
+    </div>
+    
+    <div class="centralniDeo">
+        <div class="proizvodi">
+            
+            <img src="slike/monitor1.jpg" alt="">
+            <h2>HP p27h G4 7VH95AA monitor</h2>
+            <h2 class="cena">26.000,00 rsd</h2>
+            <p class="podaci">količina</p>
+            <input type="text" class="podaci">
+            <button type="submit">dodaj u korpu</button>
+
+            
+        </div>
+
+        <div class="proizvodi">
+            
+            <img src="slike/monitor2.jpg" alt="">
+            <h2>HP 32s 2UD96AA monitor</h2>
+            <h2 class="cena">25.000,00 rsd</h2>
+            <p class="podaci">količina</p>
+            <input type="text" class="podaci">
+            <button type="submit">dodaj u korpu</button>
+
+            
+        </div>
+
+        <div class="proizvodi">
+            
+            <img src="slike/laptop1.jpg" alt="">
+            <h2>HP 250 G7 Intel N4020 8GB 256GB SSD FullHD (1F3L2EA) laptop</h2>
+            <h2 class="cena">43.900,00 rsd</h2>
+            <p class="podaci">količina</p>
+            <input type="text" class="podaci">
+            <button type="submit">dodaj u korpu</button>
+
+            
+        </div>
+
+        <div class="proizvodi">
+            
+            <img src="slike/laptop2.jpg" alt="">
+            <h2>HP 250 G7 i5-1035G1 1B7P8ES 8GB 256GB SSD Win 10 Pro FullHD laptop </h2>
+            <h2 class="cena">89.789,00 rsd</h2>
+            <p class="podaci">količina</p>
+            <input type="text" class="podaci">
+            <button type="submit">dodaj u korpu</button>
+
+            
+        </div>
+
+        <div class="proizvodi">
+            
+            <img src="slike/stampac1.jpg" alt="">
+            <h2>HP Smart Tank 515 Wireless All-in-One 1TJ09A all-in-one štampač</h2>
+            <h2 class="cena">21.132,00 rsd</h2>
+            <p class="podaci">količina</p>
+            <input type="text" class="podaci">
+            <button type="submit">dodaj u korpu</button>
+
+            
+        </div>
+        <div class="proizvodi">
+            
+            <img src="slike/stampac2.jpg" alt="">
+            <h2>HP LaserJet Pro M203dw laserski štampač </h2>
+            <h2 class="cena">19.899,00 rsd</h2>
+            <p class="podaci">količina</p>
+            <input type="text" class="podaci">
+            <button type="submit">dodaj u korpu</button>
+
+            
+        </div>
+
+
+    </div>
+    <div class="desnaStrana">
+        <h2>Registracija</h2>
+        <form action="" method="post">
+           <p>Ime i prezime<input type="text" name="ime"></p>
+           <p>Username<input type="text" name="username" placeholder="username"></p>
+           <p>Password<input type="password" name="password" placeholder="password"></p>
+           <p>E-mail <input type="email" name="email" placeholder="Primer@gmail.com"></p>
+           <p>Datum rodjenja<input type="date" name="datum rodjenja"></p>
+           <p>M<input type="radio" name="pol"> Ž<input type="radio" name="pol"></p>
+           <p>Grad<select name="odabir">
+         <option></option> 
+           <option>Beograd</option>
+            <option>Novi Sad</option>
+            <option>Loznica</option>
+            <option>Neki drugi grad</option></select></p>
+           <p>accept terms<input type="checkbox" name="" id=""></p>
+           <p><button type="submit">Potvrdi</button></p>
+            
+           
+            
+        </form>
+    </div>
+</div>
+
+<div class="footer">
+    Todor Tinterovic S68/19 ttinterovic6819s@raf.rs 061/66-80-128
+</div>
+
+    </div>
+
+
+    
+</body>
+</html>
